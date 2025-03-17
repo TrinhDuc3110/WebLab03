@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend Developer Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color-light: #ffffff;
+            --text-color-light: #000000;
+            --bg-color-dark: #212529;
+            --text-color-dark: #f8f9fa;
+        }
+
+        body {
+            background-color: var(--bg-color-light);
+            color: var(--text-color-light);
+            transition: all 0.3s ease;
+            font-family: "Lucida Console", "Courier New", monospace;
+        }
+
+        body.dark-mode {
+            background-color: var(--bg-color-dark);
+            color: var(--text-color-dark);
+        }
+        nav{
+            margin-bottom: 120px;
+        }
+        .banner {
+            padding-bottom: 100px;
+            border: solid 2px black;
+            
+        }
+
+        .dark-mode .card {
+            background-color: #343a40;
+            color: #f8f9fa;
+        }
+
+        .container {
+            max-width: 900px;
+        }
+
+        .card {
+            border: 1px solid black;
+            margin-bottom: 10px;
+        }
+
+        .circle-card {
+            border-radius: 10px;
+            padding: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="banner">
+        <nav class="navbar navbar-expand-lg ">
+            <div class="container">
+                <a class="navbar-brand" href="#">Trịnh Văn Đức</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Projects</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Articles</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <button id="darkModeToggle" class="btn btn-outline-dark">🌙</button>
+            </div>
+        </nav>
+        <div class="text-center">
+            <h2>Frontend Developer</h2>
+            <p>html only with proper layout, no styling</p>
+        </div>
+    </div>
+    <div class="p-4">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card p-3">
+                    <h4>Projects</h4>
+                    <ul>
+                        <li>HTML Only Portfolio</li>
+                        <li>Calculator</li>
+                        <li>Quiz App</li>
+                        <li>Countdown Timer</li>
+                        <li>Product Upcoming Page</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card p-3">
+                    <h4>Work Experience</h4>
+                    <p>roadmap.sh - Solved all frontend projects</p>
+                    <a href="#">Visit my Profile</a>
+                </div>
+                <div class="card p-3">
+                    <h4>OpenSource Work</h4>
+                    <p>Contributed to 50+ open source projects.</p>
+                    <a href="#">Visit my GitHub Profile</a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card p-3">
+                    <h4>Education</h4>
+                    <p>Graduated with 3.76/4 GPA.</p>
+                    <ul>
+                        <li>Object Oriented Programming</li>
+                        <li>Data Structures & Algorithms</li>
+                        <li>AI & Machine Learning</li>
+                        <li>Database Management Systems</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card circle-card text-center">
+                    <p>John Doe was a brilliant student, always stood out with his assignments.</p>
+                    <p class="text-muted">Jane Doe - Assistant Professor</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card circle-card text-center">
+                    <p>John Doe was a brilliant student, always stood out with his assignments.</p>
+                    <p class="text-muted">Jane Doe - Assistant Professor</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card circle-card text-center">
+                    <p>John Doe was a brilliant student, always stood out with his assignments.</p>
+                    <p class="text-muted">Jane Doe - Assistant Professor</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="text-center py-3 border-top">© all rights reserved 2025</footer>
+    <script>
+        const darkModeToggle = document.getElementById("darkModeToggle");
+        darkModeToggle.addEventListener("click", () => {
+            document.body.classList.toggle("dark-mode");
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

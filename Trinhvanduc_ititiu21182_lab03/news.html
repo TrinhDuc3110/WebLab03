@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Tin Tức</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .container{
+            max-width: 1000px;
+            margin: auto;
+        }
+        .news-container {
+            max-height: 300px;
+            margin: auto;
+            padding-top: 20px;
+        }
+        .news-item {
+            margin: auto;
+            margin-bottom: 20px;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 15px;
+        }
+        
+        .news-title {
+            font-weight: bold;
+            font-size: 18px;
+        }
+        .news-item-img{
+            text-align: right;
+        }
+        img{
+            width: 200px;
+            
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container text-center">
+            <ul class="nav nav-pills">
+                <li class="nav-item"><a class="nav-link" href="#">Thời sự</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Thế giới</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Kinh tế</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Đời sống</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Sức khoẻ</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Giải trí</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Thể thao</a></li>
+                <li class="nav-item"><a class="nav-link active" href="#">Công nghệ</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="news-container">
+        <div class="news-item row">
+            <div class="news-item-img col-md-4">
+                <img src="./imgs/image.png" alt="Tin tức 1" class="img-fluid">
+            </div>
+            <div class="col-md-8">
+                <p class="text-muted">Tin tức công nghệ</p>
+                <p class="news-title">Mở chiến dịch hỗ trợ doanh nghiệp công nghệ số Việt Nam vươn ra thế giới</p>
+                <ul>
+                    <li>Tạo hành lang thu hút doanh nghiệp công nghệ số</li>
+                </ul>
+            </div>
+        </div>
+        <div class="news-item row">
+            <div class="news-item-img col-md-4">
+                <img src="./imgs/image.png" alt="Tin tức 2" class="img-fluid">
+            </div>
+            <div class="col-md-8">
+                <p class="text-muted">Tin tức công nghệ</p>
+                <p class="news-title">YouTuber Việt Nam sẽ bị đánh thuế bản quyền nặng nếu không có hồ sơ tại Mỹ</p>
+                <ul>
+                    <li>Doanh số smartphone tại Việt Nam tụt lùi</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
